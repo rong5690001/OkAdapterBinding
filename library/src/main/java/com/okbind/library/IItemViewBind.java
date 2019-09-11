@@ -1,8 +1,9 @@
 package com.okbind.library;
 
-import android.support.annotation.LayoutRes;
 
 import java.util.List;
+
+import androidx.annotation.LayoutRes;
 
 /**
  * Created by chen.huarong on 2018/1/10.

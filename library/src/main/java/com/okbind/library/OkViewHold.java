@@ -1,12 +1,12 @@
 package com.okbind.library;
 
-import android.databinding.ViewDataBinding;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by chen.huarong on 2017/12/26.
- *
  */
 
 public class OkViewHold extends RecyclerView.ViewHolder {
@@ -14,15 +14,16 @@ public class OkViewHold extends RecyclerView.ViewHolder {
     private ViewDataBinding mItemBinding;
 
 
-    public OkViewHold(View itemView) {
+    OkViewHold(View itemView) {
         super(itemView);
     }
 
-    public ViewDataBinding getItemBinding() {
-        return mItemBinding;
+    @SuppressWarnings("TypeParameterUnusedInFormals")
+    public <T extends ViewDataBinding> T getItemBinding() {
+        return (T) mItemBinding;
     }
 
-    public void setItemBinding(ViewDataBinding itemBinding) {
+    void setItemBinding(ViewDataBinding itemBinding) {
         this.mItemBinding = itemBinding;
     }
 

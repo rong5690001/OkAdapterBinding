@@ -1,10 +1,9 @@
 package com.okbind.library;
 
-import android.content.Context;
-import android.support.v7.widget.RecyclerView;
-
 import java.lang.ref.WeakReference;
 import java.util.List;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by chen.huarong on 2018/1/13.
@@ -52,13 +51,6 @@ public abstract class ItemViewBind<T> implements IItemViewBind<T> {
     public OkBindingAdapter getOkAdapter() {
         if (checkAdapter()) {
             return mOkAdapter.get();
-        }
-        throw new NullPointerException("mOkAdapter is null, attachAdapter first");
-    }
-
-    public Context getContext() {
-        if (checkAdapter()) {
-            return mOkAdapter.get().mContext;
         }
         throw new NullPointerException("mOkAdapter is null, attachAdapter first");
     }

@@ -1,9 +1,10 @@
 package com.okbind.library;
 
-import android.support.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
 
 /**
  * Created by chen.huarong on 2018/1/29.
